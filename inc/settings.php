@@ -65,12 +65,12 @@ class Settings extends Singleton {
 	public function renderOptionsPage() {
 		?><form action='options.php' method='post'>
 			<div class="wrap">
-				<h1>Fabrica Evergreen Web</h1><?php
-				settings_fields('few-settings-group');
-				do_settings_sections('few-settings-group');
-				submit_button('Save');
-				?></form>
-			</div>
+			<h1>Fabrica Evergreen Web</h1><?php
+			settings_fields('few-settings-group');
+			do_settings_sections('few-settings-group');
+			submit_button('Save');
+			?></div>
+			</form>
 		<?php
 	}
 }

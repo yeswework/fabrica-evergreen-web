@@ -54,7 +54,7 @@ class Settings extends Singleton {
 	}
 
 	public function renderSectionHeading() {
-		echo __('<p><a href="https://4042302.org">4042302</a> is the technique devised by <a href="https://ar.al/">Aral Balkan</a> to promote an \'evergreen web\', where links do not expire after a site is moved or redeveloped, but automatically fall back to an older version of the page.</p><p>This is a WordPress implementation of that paradigm (by <a href="http://yeswework.com">Yes we work</a>).</p><p>Specify the complete fallback path here (including <code>http://</code> or <code>https://</code> as appropriate, as well as a trailing slash) and any links not found on this site will be passed with to the archived version at that path, with a 302 response code.', 'fabrica-evergreen-web');
+		echo __('<p><a href="https://4042302.org">4042302</a> is the technique devised by <a href="https://ar.al/">Aral Balkan</a> to promote an \'evergreen web\', where links do not expire after a site is moved or redeveloped, but automatically redirect to an older version of the site (hosted on a subdomain or different server).</p><p>This is a WordPress implementation of that paradigm (by <a href="http://yeswework.com">Yes we work</a>).</p><p>Specify the complete fallback path here (including <code>http://</code> or <code>https://</code> as appropriate, as well as a trailing slash) and any links not found on this site will be passed with to the archived version at that path, with a 302 response code.', 'fabrica-evergreen-web');
 	}
 
 	public function renderFallbackPathField() {

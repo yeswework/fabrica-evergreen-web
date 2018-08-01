@@ -78,8 +78,7 @@ class Settings extends Singleton {
 			do_settings_sections('few-settings-group');
 			submit_button('Save');
 			?></div>
-			</form>
-		<?php
+		</form><?php
 	}
 }
 

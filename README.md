@@ -1,5 +1,5 @@
 # Fabrica Evergreen Web
-FEW is a WordPress plugin by [Yes we work](http://yeswework.com/) that implements the [404 → 302](https://4042302.org/) 'evergreen web' technique developed by [Aral Balkan](https://ar.al/).
+FEW is a WordPress plugin that implements the [404 → 302](https://4042302.org/) 'evergreen web' technique developed by [Aral Balkan](https://ar.al/).
 
 ## Installation
 Download the zip file and install in WordPress via Plugins > Add New > Upload Plugin, then activate the plugin.

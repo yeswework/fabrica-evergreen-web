@@ -4,15 +4,12 @@ namespace Fabrica\EvergreenWeb;
 
 if (!defined('WPINC')) { die(); }
 
-require_once('singleton.php');
-
 class Settings extends Singleton {
 
 	private static $options;
 
 	public function init() {
 		self::$options = get_option('few-settings');
-
 		add_action('admin_menu', array($this, 'addAdminMenu'));
 		add_action('admin_init', array($this, 'register'));
 	}

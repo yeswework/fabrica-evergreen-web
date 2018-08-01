@@ -11,5 +11,6 @@ License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 */
 
+require_once('inc/singleton.php');
 require_once('inc/base.php');
 require_once('inc/settings.php');

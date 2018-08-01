@@ -4,8 +4,6 @@ namespace Fabrica\EvergreenWeb;
 
 if (!defined('WPINC')) { die(); }
 
-require_once('singleton.php');
-
 class Base extends Singleton {
 
 	private static $options;

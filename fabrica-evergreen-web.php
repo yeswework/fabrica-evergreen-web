@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Fabrica Evergreen Web
-Plugin URI: https://fabri.ca/
+Plugin URI: https://github.com/yeswework/fabrica-evergreen-web
 Description: WordPress implementation of the <a href="https://4042302.org/">404 → 302</a> 'evergreen web' technique developed by <a href="https://ar.al/">Aral Balkan</a>.
 Version: 0.1.0
 Author: Yes we work

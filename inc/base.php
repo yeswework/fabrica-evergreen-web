@@ -8,17 +8,17 @@ require_once('singleton.php');
 
 class Base extends Singleton {
 
+	private static $options;
+
 	public function init() {
-		$options = get_option('few-settings');
-		if (!isset($options['few_fallback_path'])) { return; }
+		self::$options = get_option('few-settings');
+		if (!isset(self::$options['few_fallback_path']) || strlen(self::$options['few_fallback_path']) == 0)  { return; }
 		add_action('template_redirect', array($this, 'templateRedirect'));
 	}
 
 	public function templateRedirect() {
-		$options = get_option('few-settings');
-		if (!isset($options['few_fallback_path'])) { return; }
-		$fallback = $options['few_fallback_path'];
-		if ($fallback && is_404()) {
+		$fallback = self::$options['few_fallback_path'];
+		if (is_404()) {
 			wp_redirect($fallback . $_SERVER['REQUEST_URI']);
 			exit();
 		}

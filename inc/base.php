@@ -16,8 +16,8 @@ class Base {
 
 	public static function templateRedirect() {
 		$fallback = self::$options['few_fallback_path'];
-		if (is_404()) {
-			wp_redirect($fallback . $_SERVER['REQUEST_URI'], 307);
+		if (is_404() && !empty($_SERVER['REQUEST_URI'])) {
+			wp_redirect($fallback . sanitize_url(wp_unslash($_SERVER['REQUEST_URI'])), 307);
 			exit();
 		}
 	}
